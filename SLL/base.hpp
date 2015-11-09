@@ -40,6 +40,9 @@ public:
   bool contains(const T& comparable);
 
 
+  /**
+   * Print the contents of the singly linked list to stdandard out
+   */
   void pretty_print();
 
 
@@ -55,9 +58,10 @@ public:
     std::shared_ptr<element> next;
   };
 
+  // Track the start of the list
   std::shared_ptr<element> head;
 
-  // Optimize the tail tail addition
+  // Optimize the tail tail addition by also tracking the tail element
   std::shared_ptr<element> tail;
 };
 

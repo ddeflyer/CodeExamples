@@ -5,6 +5,9 @@
 #include <memory>
 
 
+/**
+ * Implemention of the SinglyLinkedList type using loop based methods where applicable
+ */
 template <typename T> class LoopSLL: public SinglyLinkedList<T>
 {
 public:

@@ -54,13 +54,13 @@ template <typename T> bool RecSLL<T>::contains(const T& comparable)
 
 template <typename T> bool
 RecSLL<T>::contains_int(const T& comparable,
-			const std::shared_ptr<typename SinglyLinkedList<T>::element>& next)
+			const std::shared_ptr<typename SinglyLinkedList<T>::element>& curr)
 {
-  if (next) {
-    if (comparable == next->value) {
+  if (curr) {
+    if (comparable == curr->value) {
       return true;
     } else {
-      return this->contains_int(comparable, next->next);
+      return this->contains_int(comparable, curr->next);
     }
   } else {
     return false;
