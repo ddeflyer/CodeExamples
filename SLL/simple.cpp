@@ -4,9 +4,8 @@
 /**
  * Recursive singly linked list
  */
-class SimpleSinglyLinkedList
+struct SimpleSinglyLinkedList
 {
-public:
   void add_head(int element)
   {
     std::shared_ptr<SimpleSinglyLinkedList::element> new_head =
