@@ -19,7 +19,6 @@ template <typename T> bool LoopSLL<T>::del(const T& comparable)
 
   // it is possible that we are done...
   if (!this->head || !this->head->next) {
-    std::cout << "early return\n";
     return found;
   }
 
