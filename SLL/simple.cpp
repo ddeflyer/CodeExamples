@@ -1,6 +1,9 @@
 #include <memory>
 #include <iostream>
 
+/**
+ * Recursive singly linked list
+ */
 class SimpleSinglyLinkedList
 {
 public:
